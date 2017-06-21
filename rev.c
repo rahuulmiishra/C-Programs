@@ -1,11 +1,12 @@
 #include<stdio.h>
-int getLength(char str[6]);
+int getLength(char str[]);
+
 int main()
 {
-	char str[10] = "mayank";
+	char str[] = "may alisdjasdaks jasdank";
 
 	int len = getLength(str);
-    int last = len-1;
+  int last = len-1;
 
     for(int i=0;i<len/2;i++)
     {
@@ -21,7 +22,7 @@ int main()
 
 }
 
-int getLength(char str[6])
+int getLength(char str[])
 {
    int length=0;
       while(str[length] != '\0')
